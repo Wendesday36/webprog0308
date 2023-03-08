@@ -18,7 +18,12 @@
         echo($tomb[$index1]. " ");
 
     }
-    
+    $osszeg = 0;
+    foreach($tomb as $ertek){
+        $osszeg += $ertek;
+        
+    }
+    echo "összeg:".$osszeg;
     ?>
 </body>
 </html>
