@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php
-    echo"<h1>hello</h1>";
+    echo"<h1><center>hello</center></h1>";
     $tomb = [];
     $also = 1;
     $felso = 100;
@@ -24,6 +24,38 @@
         
     }
     echo "összeg:".$osszeg;
+
+
+    //masodik
+
+    echo"<h3>-kettes</h3>";
+    $tomb2 = [];
+    for($index1 = 0; $index1 < 5; $index1++){
+        $randomSzam = rand($also,$felso);
+        $tomb2[$index1] = $randomSzam;
+        echo($tomb2[$index1]. " ");
+
+    }
+    for ($i = 0; $i < count($tomb); $i++) {
+        switch($tomb2[$i]){
+        case 1:
+            echo $tomb2[$i]."-egyes<br>";
+            break;
+        case 2:
+            echo $tomb2[$i]."-kettes<br>";
+            break;
+        case 3:
+            echo $tomb2[$i]."-harmas<br>";
+            break;
+        case 4:
+            echo $tomb2[$i]."-negyes<br>";
+            break;
+        }
+
+    }
+    
+    
+    
     ?>
 </body>
 </html>
