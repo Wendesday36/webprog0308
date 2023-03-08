@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Berta Zoé Anna</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -80,6 +81,29 @@
         }
     }
     fug(10);
+
+    function sakk(){
+    
+        echo "<table id = sakk>";
+        echo "<tr><td><td>";
+        for ($i = 0; $i < 8; $i++) {
+            $betu = 97 + $i;
+            echo "<td>" . chr($betu) . "</td>";
+        }
+        echo "</tr>";
+        for ($i = 8; $i > 0; $i--) {
+            echo "<tr><td>$i</td>";
+            /**8cella a sorban*/
+            for ($j = 0; $j < 8; $j++) {
+                $szin = ($i + $j) % 2 == 1 ? "fekete" : "feher";
+                echo"<td class=$szin></td>";
+            }
+            echo "</tr>";
+        }
+        echo"</table>";
+    }
+    sakk();
+
     ?>
 
 </body>
