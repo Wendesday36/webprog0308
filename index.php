@@ -9,6 +9,15 @@
 <body>
     <?php
     echo"<h1>hello</h1>";
+    $tomb = [];
+    $also = 1;
+    $felso = 100;
+    for($index1 = 0; $index1 < 5; $index1++){
+        $randomSzam = rand($also,$felso);
+        $tomb[$index1] = $randomSzam;
+        echo($tomb[$index1]. " ");
+
+    }
     
     ?>
 </body>
