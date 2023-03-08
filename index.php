@@ -59,22 +59,29 @@
 
     //harmadik
 
-    echo "<h3>-harmadik</h3>";
-    echo "<br>";
-    $fejIras = [];
-    for ($index1 = 0; $index1 < 5; $index1++) {
-        $randomSzam = rand(1, 2);
-        echo "veletlen szam:" . $randomSzam . "<br>";
-        if ($randomSzam == 1) {
-            $fejIras[$index1] = true;
-        } else {
-            $fejIras[$index1] = false;
-        }
-        echo (boolval($fejIras[$index1] )?"írás":"fej"). " ";
-    }
-    
 
+
+
+
+    function fug($darabSzam)
+    {
+        echo "<h3>-harmadik</h3>";
+        echo "<br>";
+        $fejIras = [];
+        for ($index1 = 0; $index1 < $darabSzam; $index1++) {
+            $randomSzam = rand(1, 2);
+            echo "veletlen szam:" . $randomSzam . "<br>";
+            if ($randomSzam == 1) {
+                $fejIras[$index1] = true;
+            } else {
+                $fejIras[$index1] = false;
+            }
+            echo (boolval($fejIras[$index1]) ? "írás" : "fej") . " ";
+        }
+    }
+    fug(10);
     ?>
+
 </body>
 
 </html>
