@@ -27,15 +27,16 @@
 
 
     //masodik
-
+    echo "<br>";
     echo"<h3>-kettes</h3>";
     $tomb2 = [];
     for($index1 = 0; $index1 < 5; $index1++){
-        $randomSzam = rand($also,$felso);
+        $randomSzam = rand(1,5);
         $tomb2[$index1] = $randomSzam;
         echo($tomb2[$index1]. " ");
 
     }
+    echo "<br>";
     for ($i = 0; $i < count($tomb); $i++) {
         switch($tomb2[$i]){
         case 1:
@@ -45,15 +46,26 @@
             echo $tomb2[$i]."-kettes<br>";
             break;
         case 3:
-            echo $tomb2[$i]."-harmas<br>";
+            echo $tomb2[$i]."-hármas<br>";
             break;
         case 4:
-            echo $tomb2[$i]."-negyes<br>";
+            echo $tomb2[$i]."-négyes<br>";
+            break;
+        case 5:
+            echo $tomb2[$i]."-ötös<br>";
             break;
         }
 
     }
-    
+
+
+    //harmadik
+
+    echo"<h3>-harmadik</h3>";
+    $fejIras = [];
+    for($index1 = 0; $index1 < 5; $index1++){
+        
+    }
     
     
     ?>
